@@ -14,8 +14,13 @@ h1 {
   border-bottom:1px solid #eee;
 }
 
-h1 a {
-  color:#333;
+  h1 a {
+    color:#333;
+  }
+
+h2 {
+  line-height:1.3;
+  padding-bottom:9px;
 }
 
 .item {
@@ -34,6 +39,10 @@ h1 a {
     width:100%;
   }
 
+  h2 {
+    font-size:16px;
+  }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) and (orientation:landscape) {
@@ -44,6 +53,10 @@ h1 a {
 
   .container {
     width:100%;
+  }
+
+  h2 {
+    font-size:16px;
   }
 
 }

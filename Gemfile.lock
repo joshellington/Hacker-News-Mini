@@ -8,7 +8,6 @@ GEM
       net-http-persistent (~> 1.8)
       nokogiri (~> 1.4)
       webrobots (>= 0.0.9, ~> 0.0)
-    memcached (1.3)
     net-http-digest_auth (1.1.1)
     net-http-persistent (1.9)
     nokogiri (1.4.4)
@@ -31,7 +30,6 @@ DEPENDENCIES
   cobravsmongoose
   json
   mechanize
-  memcached
   require_all
   ruby-hackernews
   sinatra

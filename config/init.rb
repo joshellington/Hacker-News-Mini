@@ -15,7 +15,7 @@ require './config/'+ENV['RACK_ENV']
 
 #
 # Memcached
-$cache = Memcached.new("localhost:11211")
+# $cache = Memcached.new("localhost:11211")
 
 #
 # Mongo connection

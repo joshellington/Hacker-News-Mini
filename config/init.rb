@@ -5,7 +5,7 @@ require 'cobravsmongoose'
 require 'json'
 require 'digest/md5'
 require 'ruby-hackernews'
-require 'memcached'
+# require 'memcached'
 
 require './lib/cache'
 

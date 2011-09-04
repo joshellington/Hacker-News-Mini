@@ -1,0 +1,16 @@
+<div class="container">
+
+  <h1><a href="/<%= @path %>">Hacker News Mini</a></h1>
+
+  <% @entries.each do |item| %>
+    <div class="item">
+      <h2><a href="<%= item.link.href %>"><%= item.link.title %></a></h2>
+      <p><%= item.voting.score %> points &mdash; <%= item.time.strftime('%m/%d/%Y, %I:%M%p') %> | <a href="http://news.ycombinator.com/item?id=<%= item.id %>"><%= item.comments_count %> comments</a></p>
+    </div>
+  <% end %>
+  <% if @prev_page and @prev_page != 0 %>
+  <a href="<%= @path %>/page/<%= @prev_page %>" class="btn primary">Previous Page</a>
+  <% end %>
+  <a href="<%= @path %>/page/<%= @next_page %>" class="btn primary">Next Page</a>
+
+</div>

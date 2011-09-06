@@ -5,8 +5,35 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre
 
 
 body {
+}
+
+#wrapper {
   padding:30px;
 }
+
+ul.menu {
+  overflow:hidden;
+  background:#eee;
+  margin:0;
+  padding:10px 20px;
+  box-shadow:0 0 10px #aaa;
+  -webkit-box-shadow:0 0 10px #aaa;
+  -moz-box-shadow:0 0 10px #aaa;
+
+  width:940px;
+  margin:0 auto;
+}
+
+  ul.menu li {
+    display:inline;
+    float:left;
+    font-size:13px;
+  }
+
+  ul.menu li a {
+    display:block;
+    padding-right:15px;
+  }
 
 h1 {
   padding-bottom:19px;
@@ -32,7 +59,16 @@ h2 {
 @media only screen and (min-width: 320px) and (max-width: 479px) and (orientation:portrait) {
 
   body {
+    overflow:hidden;
+  }
+
+  #wrapper {
     padding:20px;
+  }
+
+  ul.menu {
+    width:100%;
+    margin:0;
   }
 
   .container {
@@ -48,7 +84,16 @@ h2 {
 @media only screen and (min-width: 480px) and (max-width: 1024px) and (orientation:landscape) {
 
   body {
+    overflow:hidden;
+  }
+
+  #wrapper {
     padding:20px;
+  }
+
+  ul.menu {
+    width:100%;
+    margin:0;
   }
 
   .container {

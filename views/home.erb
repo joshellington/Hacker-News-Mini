@@ -17,6 +17,11 @@
           <a href="http://viewtext.org/article?url=<%= item.link.href %>" class="btn">Article text</a>
         <% end %>
         <a href="http://ihackernews.com/comments/<%= item.id %>" class="btn"><%= item.comments_count %> comments</a></p>
+      <div class="comments" style="display:none;">
+        <% item.comments.each do |comment| %>
+          <%= comment.text %>
+        <% end %>
+      </div>
     </div>
   <% end %>
 <% if @next_page or @prev_page %>

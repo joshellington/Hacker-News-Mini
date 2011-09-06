@@ -25,7 +25,7 @@ match '/page/:page/?' do
   @entries = Entry.all(page).to_a.reverse.shift(30)
   @entries.reverse!
 
-  @title = 'Page '+page
+  @title = 'Page '+page.to_s
 
   @next_page = page + 1
   @prev_page = page - 1

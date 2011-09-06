@@ -28,11 +28,11 @@ ul.menu {
     display:inline;
     float:left;
     font-size:13px;
+    padding-right:15px;
   }
 
   ul.menu li a {
     display:block;
-    padding-right:15px;
   }
 
 h1 {

@@ -5,7 +5,17 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre
 
 
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
+
+a {
+  color:#555;
+}
+
+  a:hover {
+    color:#888;
+  }
 
 #wrapper {
   padding:30px;
@@ -13,25 +23,31 @@ body {
 
 ul.menu {
   overflow:hidden;
-  background:#eee;
+  background:#F66603;
   margin:0;
   padding:10px 20px;
-  box-shadow:0 0 10px #aaa;
+  /*box-shadow:0 0 10px #aaa;
   -webkit-box-shadow:0 0 10px #aaa;
-  -moz-box-shadow:0 0 10px #aaa;
+  -moz-box-shadow:0 0 10px #aaa;*/
 
-  width:940px;
-  margin:0 auto;
+  /*width:940px;
+  margin:0 auto;*/
 }
+
+  ul.menu li.first {
+    font-weight: 700;
+  }
 
   ul.menu li {
     display:inline;
     float:left;
     font-size:13px;
     padding-right:15px;
+    color:#fff;
   }
 
   ul.menu li a {
+    color:#fff;
     display:block;
   }
 
@@ -48,12 +64,18 @@ h1 {
 h2 {
   line-height:1.3;
   padding-bottom:9px;
+  font-weight: 700;
+  font-size:24px;
 }
 
 .item {
   padding-bottom:19px;
   margin-bottom:19px;
   border-bottom:1px solid #eee;
+}
+
+.btn.primary {
+  background:#F66603;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) and (orientation:portrait) {

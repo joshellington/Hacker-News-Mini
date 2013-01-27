@@ -23,6 +23,9 @@ end
 
 match '/page/:page/?' do
   page = params[:page].to_i
+  if page == 1
+    redirect '/'
+  end
   @entries = Entry.all(page).to_a.reverse.shift(30)
   @entries.reverse!
 

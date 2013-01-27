@@ -35,10 +35,12 @@
     <% end %>
   <% end %>
 <% if @next_page or @prev_page %>
-  <% if @prev_page and @prev_page != 0 %>
-  <a href="<%= @path %>/page/<%= @prev_page %>" class="btn primary">Previous Page</a>
-  <% end %>
-  <a href="<%= @path %>/page/<%= @next_page %>" class="btn primary">Next Page</a>
+  <div class="pagination">
+    <% if @prev_page and @prev_page != 0 %>
+    <a href="<%= @path %>/page/<%= @prev_page %>" class="btn primary">Previous Page</a>
+    <% end %>
+    <a href="<%= @path %>/page/<%= @next_page %>" class="btn primary">Next Page</a>
+  </div>
 <% end %>
 
 </div>

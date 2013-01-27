@@ -128,13 +128,17 @@ h2 {
   display:inline-block;
 }
 
+.pagination {
+  margin:0 30px;
+}
+
 .btn.primary {
   background:#F66603;
   color:#fff;
   padding:7px 10px;
   border-radius: 4px;
   display: inline-block;
-  margin:0 30px;
+  margin-right:10px;
   font-size:11px;
 }
 

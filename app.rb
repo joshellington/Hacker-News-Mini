@@ -13,6 +13,7 @@ end
 # Routes
 match '/' do
   @entries = Entry.all
+  # ap @entries.inspect
   @next_page = 2
 
   @title = 'Home'

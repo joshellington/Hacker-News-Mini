@@ -4,21 +4,33 @@
 
   <% @entries.each do |item| %>
     <% begin item.id %>
-    <div class="item">
-      <h2>
-        <% if item.link.site %>
-          <a href="<%= item.link.href %>"><%= item.link.title %></a>
-        <% else %>
-          <a href="http://ihackernews.com/comments/<%= item.id %>"><%= item.link.title %></a>
-        <% end %>
-      </h2>
-      <p><%= item.voting.score %> points &mdash; <%= item.time.strftime('%m/%d/%Y, %I:%M%p') %> &mdash; <em><%= item.link.site %></em></p>
-      <p>
-        <% if item.link.site %>
-          <a href="http://viewtext.org/article?url=<%= item.link.href %>" class="btn">Article text</a>
-        <% end %>
-        <a href="http://ihackernews.com/comments/<%= item.id %>" class="btn"><%= item.comments_count %> comments</a></p>
-    </div>
+      <% if item.voting.score %>
+        <div class="item">
+          <div class="number"><%= item.number %></div>
+
+          <h2>
+            <% if item.link.site %>
+              <a href="<%= item.link.href %>"><%= item.link.title %></a>
+            <% else %>
+              <a href="http://ihackernews.com/comments/<%= item.id %>"><%= item.link.title %></a>
+            <% end %>
+          </h2>
+
+          <p class="meta">
+            <%= item.voting.score %> points &mdash; <%= item.time.strftime('%m/%d/%Y, %I:%M%p') %> &mdash; <em><%= item.link.site %></em>
+          </p>
+
+          <div class="links">
+            <% if item.voting.score %>
+              <a href="http://www.readability.com/read?url=<%= item.link.href %>" class="btn desktop">Article text</a>
+
+              <a href="http://ihackernews.com/comments/<%= item.id %>" class="btn mobile"><%= item.comments_count %> comments</a>
+
+              <a href="http://news.ycombinator.com/item?id=<%= item.id %>" class="btn desktop"><%= item.comments_count %> comments</a>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
     <% rescue %>
     <% end %>
   <% end %>

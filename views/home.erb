@@ -22,11 +22,11 @@
 
           <div class="links">
             <% if item.voting.score %>
-              <a href="http://www.readability.com/read?url=<%= item.link.href %>" class="btn desktop">Article text</a>
+              <a href="http://www.readability.com/read?url=<%= item.link.href %>" class="btn">Article text</a>
 
-              <a href="http://ihackernews.com/comments/<%= item.id %>" class="btn mobile"><%= item.comments_count %> comments</a>
+              <a href="http://ihackernews.com/comments/<%= item.id %>" class="btn"><%= item.comments_count %> comments</a>
 
-              <a href="http://news.ycombinator.com/item?id=<%= item.id %>" class="btn desktop"><%= item.comments_count %> comments</a>
+              <a href="http://news.ycombinator.com/item?id=<%= item.id %>" class="btn"><%= item.comments_count %> comments</a>
             <% end %>
           </div>
         </div>

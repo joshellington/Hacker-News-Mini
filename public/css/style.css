@@ -7,7 +7,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre
 body {
   font-family: 'Domine', sans-serif;
   font-weight: 400;
-  background:#eee url(/debut_dark.png) repeat;
+  background:#eee url(/gray_jean.png) repeat;
 }
 
 a {
@@ -20,7 +20,7 @@ a {
   }
 
 #wrapper {
-  padding:30px 0;
+  padding:19px 0;
   max-width:650px;
   margin:0 auto;
   background:#fff;
@@ -28,7 +28,7 @@ a {
 
 ul.menu {
   overflow:hidden;
-  background:#eee;
+  background:#fff;
   padding:15px 30px;
   max-width:590px;
   margin:0 auto;

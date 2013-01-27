@@ -12,7 +12,7 @@ end
 #
 # Routes
 match '/' do
-  @entries = Entry.all(2)
+  @entries = Entry.all(1)
   # ap @entries.inspect
   @next_page = 2
 

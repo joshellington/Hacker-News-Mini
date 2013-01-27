@@ -28,6 +28,7 @@ a {
 
 ul.menu {
   overflow:hidden;
+  background:#eee;
   padding:15px 30px;
   max-width:590px;
   margin:0 auto;
@@ -45,15 +46,13 @@ ul.menu {
     float:left;
     font-size:11px;
     padding-right:15px;
-    color:#fff;
   }
 
   ul.menu li.first {
-    /*font-weight: 700;*/
+    font-weight: 700;
   }
 
   ul.menu li a {
-    color:#fff;
     display:block;
   }
 
@@ -159,7 +158,6 @@ h2 {
     padding:15px 20px;
     max-width:100%;
     margin:0;
-    display: none;
   }
 
   ul.menu li {

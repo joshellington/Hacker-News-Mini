@@ -17,18 +17,8 @@
           </h2>
 
           <p class="meta">
-            <%= item.voting.score %> points &mdash; <%= item.time.strftime('%m/%d/%Y, %I:%M%p') %> &mdash; <em><%= item.link.site %></em>
+            <%= item.voting.score %> points &mdash; <a href="http://news.ycombinator.com/item?id=<%= item.id %>"><%= item.comments_count %> comments</a> &mdash; <%= item.link.site %>
           </p>
-
-          <div class="links">
-            <% if item.voting.score %>
-              <a href="http://www.readability.com/read?url=<%= item.link.href %>" class="btn">Article text</a>
-
-              <a href="http://ihackernews.com/comments/<%= item.id %>" class="btn mobile"><%= item.comments_count %> comments</a>
-
-              <a href="http://news.ycombinator.com/item?id=<%= item.id %>" class="btn desktop"><%= item.comments_count %> comments</a>
-            <% end %>
-          </div>
         </div>
       <% end %>
     <% rescue %>
